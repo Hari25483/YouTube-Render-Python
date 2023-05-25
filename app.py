@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/hey')
+def hello_world1():
+    return 'Hello dsdsd'
+
 @app.route('/audio_feedback', methods=['GET', 'POST'])
 def get_audio_feedback():
     if request.method == 'POST':
